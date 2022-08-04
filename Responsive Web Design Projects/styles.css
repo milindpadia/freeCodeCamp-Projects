@@ -1,0 +1,83 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Open Sans;
+  background: linear-gradient(180deg, #0F2027, #203A43);
+  color: #f5f6f7;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  font-size: 1.10rem;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  min-width: 300px;
+  width: 50%;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+fieldset {
+  border: none;
+}
+
+textarea {
+  width: 100%;
+  font-size: 1.15rem;
+}
+
+button {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+input {
+  font-size: 1.05rem;
+  margin-left: 0;
+  padding-left: 10px;
+}
+
+select {
+  height: 2.25rem;
+}
+
+.radio-input, .input-checkbox {
+  display: block;
+}
+
+.refer-freecodecamp, .improvements {
+  padding-bottom: 0;
+}
+
+#name, #email, #number {
+  width: 100%;
+  height: 2.15rem;
+}
+
+#dropdown, #favorite-feature {
+  width: 100%;
+  font-size: 1.05rem;
+  padding-left: 7px;
+}
+
+#description {
+  text-align: center;
+  margin-bottom: 2rem;
+}
