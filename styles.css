@@ -1,0 +1,18 @@
+body {
+  font-family: Lato;
+  background-color: #0a0a23;
+  color: #f5f6f7;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+a {
+  color: #f5f6f7;
+}
