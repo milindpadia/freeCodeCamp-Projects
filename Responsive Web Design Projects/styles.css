@@ -83,12 +83,6 @@ select {
 }
 
 @media (max-width: 800px) {
-  h1 {
-    width: 80%;
-  }
-  #description {
-    width: 90%;
-  }
   #survey-form {
     width: 90%;
     padding: 0;
