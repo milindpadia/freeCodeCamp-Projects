@@ -18,6 +18,7 @@ img {
 figcaption {
   text-align: center;
   margin: 15px 0 0 0;
+  font-size: 0.9rem;
 }
 
 ul {
@@ -43,15 +44,15 @@ a {
 }
 
 #img-div {
-  background: #E5E5E5;
   margin: auto;
   padding: 20px;
 }
 
-#parent-div {
+#main {
   background-color: #EEEEEE;
+  border-radius: 5px;
   margin: 10px;
-  padding: 20px;
+  padding: 15px;
 }
 
 #wikipedia-entry {
