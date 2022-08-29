@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: Sans-Serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+img {
+  margin: 0 auto;
+  max-width: 100%;
+  display: block;
+  text-align: center;
+}
+
+figcaption {
+  text-align: center;
+  margin: 15px 0 0 0;
+}
+
+ul {
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+}
+
+li {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  max-width: 600px;
+  font-style: italic;
+  margin: 0 auto;
+  text-align: left;
+}
+
+a {
+  color: #134b5f;
+}
+
+.life-and-work {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img-div {
+  background: #E5E5E5;
+  margin: auto;
+  padding: 20px;
+}
+
+#parent-div {
+  background-color: #EEEEEE;
+  margin: 20px;
+  padding: 20px;
+}
+
+#wikipedia-entry {
+  margin: 50px auto 40px auto;
+}
