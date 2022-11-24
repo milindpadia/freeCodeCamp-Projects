@@ -42,17 +42,14 @@ def arithmetic_arranger(problems, result=None):
                 elif result == True and operand == "-":
                     answer = str(int(first_number) - int(second_number))
                 fourth_line += f"{answer:>{dashes}}    "
-                
+
     if result == True:
         third_line += "\n"
         arranged_problems = first_line + second_line + third_line + fourth_line
-        print(arranged_problems)
+        return arranged_problems
     else:
         arranged_problems = first_line + second_line + third_line
-        first_line
-        second_line
-        third_line
-        print(arranged_problems)
+        return arranged_problems
 
 arithmetic_arranger(['3801 - 2', '123 + 49'])
 
