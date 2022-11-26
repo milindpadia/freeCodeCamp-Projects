@@ -1,6 +1,6 @@
 def add_time(start_time, duration_time, day=None):
     days_of_week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-    # days_of_week = {1: 'Monday', 2: 'Tuesday', 3: 'Wednesday', 4: 'Thursday', 5: 'Friday', 6: 'Saturday', 7:'Sunday'}
+
     # function to get hours from time
     def get_hours(time):
         time = time.split()[0]
@@ -76,27 +76,30 @@ def add_time(start_time, duration_time, day=None):
                 if final_hours >= 12:
                     am_or_pm = "AM"
     
-    # return "{}:{} {}".format(final_hours, final_minutes, am_or_pm)
-    print("{}:{} {},".format(final_hours, final_minutes, am_or_pm), end=" ")
+    # future time
+    future_time = "{}:{} {}".format(final_hours, final_minutes, am_or_pm)
 
-    # to print the day of week
+    # (no. of days later)
+    if no_of_days_later == 1:
+        n_days_later = "(next day)"
+    else:
+        n_days_later = "({} days later)".format(no_of_days_later)
+    
+    # future day
     if day == None:
-        pass
+        return future_time + ' ' + n_days_later
     else:
         index = days_of_week.index(day.title())
         future_day = index + no_of_days_later
         if future_day > 7:
             while future_day > 7:
                 future_day -= 7
-            print(days_of_week[future_day], end=" ")
+            future_day = days_of_week[future_day]
         else:
-            print(days_of_week[index + no_of_days_later], end=" ")
-
-    # to print (no. of days later)
-    if no_of_days_later == 1:
-        print("(next day)")
-    else:
-        print("({} days later)".format(no_of_days_later), end=" ")
+            future_day = days_of_week[index + no_of_days_later]
+        return future_time + ', ' + future_day + ' ' + n_days_later
+    
+    
 
 add_time("11:43 PM", "24:20", "tueSday")
 
