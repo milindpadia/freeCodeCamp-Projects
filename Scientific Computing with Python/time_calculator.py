@@ -49,7 +49,6 @@ def add_time(start, duration, day=None):
             else:
                 am_or_pm = 'PM'
             
-            
     else:
         if am_or_pm == "AM":
             if final_hours > 12:
