@@ -90,14 +90,14 @@ def add_time(start, duration, day=None):
         n_days_later = "({} days later)".format(no_of_days_later)
     
     # future day and return statements
-    if day == None:
+    if day == None: # if 'day' parameter is 'None'
         if no_of_days_later == 0:
-            new_time = "{}:{} {}".format(final_hours, final_minutes, am_or_pm)
+            new_time = future_time
             return new_time
         else:
             new_time = future_time + ' ' + n_days_later
             return new_time
-    else:
+    else: # if 'day' parameter is set to any day of the week
         index = days_of_week.index(day.title())
         future_day = index + no_of_days_later
         if future_day > 7:
